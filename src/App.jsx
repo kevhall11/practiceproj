@@ -1,9 +1,19 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const Navbar = () => {
+
+  const [imageSrc, setImageSrc] = useState("/images/Michigan-State-Spartans-Logo.png");
+
+  const changeImage = (newImage) => {
+    setImageSrc(newImage);
+  };
+};
+
+
+function App() {
+  const [count, setCount] = useState(0) 
   return (
     <>
       <div className="card">
