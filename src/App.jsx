@@ -1,15 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import TextBox from './textbox'
 
-
-const Navbar = () => {
-
-  const [imageSrc, setImageSrc] = useState("/images/Michigan-State-Spartans-Logo.png");
-
-  const changeImage = (newImage) => {
-    setImageSrc(newImage);
-  };
-};
 
 
 function App() {
@@ -17,6 +9,7 @@ function App() {
   return (
     <>
       <div className="card">
+        <TextBox />
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
